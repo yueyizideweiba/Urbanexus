@@ -1,0 +1,258 @@
+/* 主题变量 */
+:root {
+  /* 主色调 */
+  --primary-color: #3b82f6;
+  --primary-light: #93c5fd;
+  --primary-dark: #1d4ed8;
+  --primary-hover-color: #2563eb;
+  
+  /* 辅助色 */
+  --secondary-color: #10b981;
+  --secondary-light: #6ee7b7;
+  --secondary-dark: #047857;
+  
+  /* 强调色 */
+  --accent-color: #f59e0b;
+  --accent-light: #fcd34d;
+  --accent-dark: #d97706;
+  
+  /* 危险色 */
+  --danger-color: #ef4444;
+  --danger-light: #fca5a5;
+  --danger-dark: #b91c1c;
+  
+  /* 成功色 */
+  --success-color: #10b981;
+  --success-light: #a7f3d0;
+  --success-dark: #047857;
+  
+  /* 警告色 */
+  --warning-color: #f59e0b;
+  --warning-hover-color: #d97706;
+  
+  /* 中性色 */
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --neutral-200: #e5e7eb;
+  --neutral-300: #d1d5db;
+  --neutral-400: #9ca3af;
+  --neutral-500: #6b7280;
+  --neutral-600: #4b5563;
+  --neutral-700: #374151;
+  --neutral-800: #1f2937;
+  --neutral-900: #111827;
+  
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* 圆角 */
+  --border-radius-sm: 0.125rem;
+  --border-radius-md: 0.25rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-xl: 1rem;
+  --border-radius-full: 9999px;
+  
+  /* 过渡 */
+  --transition-fast: 150ms;
+  --transition-normal: 300ms;
+  --transition-slow: 500ms;
+  
+  /* 布局 */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  
+  /* 字体 */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  
+  /* Z-index层级 */
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-fixed: 30;
+  --z-modal: 40;
+  --z-tooltip: 50;
+  
+  /* 背景和文本颜色 */
+  --bg-primary: white;
+  --bg-secondary: var(--neutral-50);
+  --bg-tertiary: var(--neutral-100);
+  --bg-hover: var(--neutral-100);
+  --text-primary: var(--neutral-800);
+  --text-secondary: var(--neutral-600);
+  --border-color: var(--neutral-200);
+  
+  /* 组件相关变量 */
+  --component-bg: var(--neutral-50);
+  --input-bg: white;
+  --toggle-bg: #ccc;
+}
+
+/* 夜间模式变量 */
+.dark-theme {
+  /* 主色调 - 夜间模式略微调整以保持可见性 */
+  --primary-color: #4b83f0;
+  --primary-light: #6b9ef7;
+  --primary-dark: #2961cf;
+  --primary-hover-color: #3b73e0;
+  
+  /* 中性色调反转 */
+  --neutral-50: #18191b;
+  --neutral-100: #1e2022;
+  --neutral-200: #2a2c30;
+  --neutral-300: #3e4147;
+  --neutral-400: #5c6270;
+  --neutral-500: #8891a5;
+  --neutral-600: #a7b0c0;
+  --neutral-700: #c7cdd8;
+  --neutral-800: #e1e4ea;
+  --neutral-900: #f2f4f7;
+  
+  /* 阴影 - 夜间模式下更深 */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  
+  /* 背景和文本颜色 */
+  --bg-primary: #1a1b1e;
+  --bg-secondary: #24262b;
+  --bg-tertiary: #2a2d33;
+  --bg-hover: #2f3136;
+  --text-primary: #e1e4ea;
+  --text-secondary: #a7b0c0;
+  --border-color: #3e4147;
+  
+  /* 组件相关变量 */
+  --component-bg: #24262b;
+  --component-bg-dark: #2a2d33;
+  --input-bg: #1e2022;
+  --input-bg-dark: #24262b;
+  --border-color-dark: #3e4147;
+  --bg-hover-dark: #32353c;
+  --toggle-bg-dark: #3e4147;
+  --toggle-handle-dark: #e1e4ea;
+}
+
+/* 全局样式重置 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* 通用元素样式 */
+button {
+  cursor: pointer;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--border-radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color var(--transition-fast);
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+input {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  font-size: 0.875rem;
+  transition: border-color var(--transition-fast);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+/* 实用工具类 */
+.card {
+  background: var(--bg-primary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.panel {
+  background: var(--bg-primary);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: var(--border-radius-full);
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.badge-success {
+  background-color: var(--success-light);
+  color: var(--success-dark);
+}
+
+.badge-danger {
+  background-color: var(--danger-light);
+  color: var(--danger-dark);
+}
+
+.badge-accent {
+  background-color: var(--accent-light);
+  color: var(--accent-dark);
+}
+
+/* 动画 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-normal) ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideInRight var(--transition-normal) ease-in-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft var(--transition-normal) ease-in-out;
+} 
