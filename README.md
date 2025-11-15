@@ -95,8 +95,6 @@ A modern 3D geospatial information visualization and analysis platform built wit
 
 ## 🛠️ Tech Stack
 
-![Tech Stack](images/tech.png)
-
 ### Frontend
 - **Vue 3** - Progressive JavaScript framework
 - **Cesium** - 3D globe and map engine
