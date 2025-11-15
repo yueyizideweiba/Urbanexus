@@ -1,135 +1,181 @@
-# Urbanexus - 3D 城市可视化平台
+# Urbanexus - 3D Urban Visualization Platform
 
-一个基于 Cesium 和 Vue 3 构建的现代化 3D 地理空间信息可视化与分析平台，提供丰富的地图交互、空间分析和数据管理功能。
+A modern 3D geospatial information visualization and analysis platform built with Cesium and Vue 3, providing rich map interaction, spatial analysis, and data management capabilities.
 
-🌐 **在线访问**：[http://114.215.206.64/](http://114.215.206.64/)
+🌐 **Online Access**: [http://114.215.206.64/](http://114.215.206.64/)
 
-## ✨ 主要特性
+![Main Interface](images/ui.png)
 
-### 🗺️ 核心功能
-- **3D 场景可视化**：基于 Cesium 的高性能 3D 地球渲染
-- **多种底图支持**：支持地形、影像等多种底图切换
-- **天空盒系统**：支持多种天空盒效果（蓝天、阴天、日落等）
-- **坐标系统**：支持多种坐标系统转换
+## ✨ Key Features
 
-### 📏 几何工具
-- **基本要素绘制**：点、线、面等几何要素绘制
-- **距离测量**：精确测量两点间距离
-- **面积测量**：计算多边形区域面积
+### 🗺️ Basic Features
+- **3D Scene Visualization**: High-performance 3D globe rendering based on Cesium
+- **Multiple Base Map Support**: Support for terrain, imagery, and other base map switching
+- **Skybox System**: Support for various skybox effects (blue sky, cloudy, sunset, etc.)
+- **Coordinate Systems**: Support for multiple coordinate system conversions
 
-### 🔍 场景分析
-- **建筑规划**：3D 建筑规划与可视化
-- **路径规划**：最优路径分析与规划
-- **通视分析**：视线遮挡分析
-- **可视域分析**：视野范围分析
-- **地形分析**：地形特征分析
-- **缓冲区分析**：空间缓冲区计算
-- **模型拉伸**：3D 模型高度拉伸
-- **GeoJSON 分色**：基于属性的要素分色渲染
+### 📏 Geometry Tools
+- **Basic Feature Drawing**: Drawing of geometric features such as points, lines, and polygons
 
-### 🎮 交互功能
-- **人物漫游**：第一人称视角场景漫游
-- **相机控制**：灵活的视角控制与预设视图
-- **视觉效果**：雨、雪等天气效果模拟
+![Geometry Tools](images/geometry.png)
 
-### 📊 数据管理
-- **数据加载**：支持多种格式数据导入（GLB、GLTF、3DTiles、Shapefile、GeoJSON 等）
-- **图层管理**：完整的图层管理系统
-- **存储管理**：文件上传、下载与管理
-- **HTTP 瓦片加载**：支持在线瓦片服务加载
+- **Distance Measurement**: Precise measurement of distance between two points
+- **Area Measurement**: Calculate polygon area
 
-### 👥 用户系统
-- **用户认证**：注册、登录功能
-- **权限管理**：基于角色的功能访问控制
-- **用户管理**：用户信息管理
+![Geometry Tools](images/geometry2.png)
 
-### 🎨 界面特性
-- **响应式设计**：适配不同屏幕尺寸
-- **主题切换**：支持明暗主题切换
-- **可折叠侧边栏**：灵活的工具面板布局
-- **坐标显示**：实时显示鼠标位置坐标
+### 🔍 Scene Analysis
+- **Building Planning**: 3D building planning and visualization
 
-## 🛠️ 技术栈
+![Building Planning](images/sample1.png)
 
-### 前端
-- **Vue 3** - 渐进式 JavaScript 框架
-- **Cesium** - 3D 地球和地图引擎
-- **Vite** - 下一代前端构建工具
-- **Element Plus** - Vue 3 UI 组件库
-- **Three.js** - 3D 图形库
-- **Turf.js** - 空间分析库
-- **Axios** - HTTP 客户端
+- **Route Planning**: Plan routes according to requirements
 
-### 后端
-- **Node.js** - JavaScript 运行时
-- **Express** - Web 应用框架
-- **PostgreSQL** - 关系型数据库
-- **JWT** - 身份认证
-- **Multer** - 文件上传处理
-- **bcryptjs** - 密码加密
+![Route](images/route.png)
 
-## 📦 项目结构
+- **Line of Sight Analysis**: Visibility obstruction analysis
+
+![Line of Sight](images/visible.png)
+
+- **Viewshed Analysis**: Field of view range analysis
+
+![Viewshed](images/visible2.png)
+
+- **Buffer Analysis**: Spatial buffer calculation
+
+![Buffer](images/buffer.png)
+
+- **Model Stretching**: 3D model height stretching
+
+![Stretching](images/strech.png)
+
+- **GeoJSON Color Coding**: Feature color rendering based on attributes
+
+![Color Coding](images/color.png)
+
+- **Shadow Rate Analysis**: Analyze shadow rate/sunlight rate
+
+![Shadow Rate](images/shadow.png)
+
+![Shadow Rate 2](images/shadow2.png)
+
+### 🎮 Interactive Features
+- **Character Roaming**: First-person perspective scene roaming
+
+![Terrain Roaming](images/terrain.png)
+
+![Flight Roaming](images/fly.png)
+
+- **Camera Control**: Flexible view control and preset views
+- **Visual Effects**: Weather effects simulation (rain, snow, etc.)
+
+### 📊 Data Management
+- **Data Loading**: Support for importing multiple format data (GLB, GLTF, 3DTiles, Shapefile, GeoJSON, etc.)
+- **Layer Management**: Complete layer management system
+- **Storage Management**: File upload, download, and management
+- **HTTP Tile Loading**: Support for online tile service loading
+
+![3DTiles](images/3dtiles.png)
+
+![GeoJSON](images/geojson.png)
+
+### 👥 User System
+
+![User System](images/user.png)
+
+- **User Authentication**: Registration and login functionality
+- **Permission Management**: Role-based feature access control
+- **User Management**: User information management
+
+### 🎨 Interface Features
+- **Responsive Design**: Adapts to different screen sizes
+- **Theme Switching**: Support for light/dark theme switching
+- **Collapsible Sidebar**: Flexible tool panel layout
+- **Coordinate Display**: Real-time display of mouse position coordinates
+
+## 🛠️ Tech Stack
+
+![Tech Stack](images/tech.png)
+
+### Frontend
+- **Vue 3** - Progressive JavaScript framework
+- **Cesium** - 3D globe and map engine
+- **Vite** - Next-generation frontend build tool
+- **Element Plus** - Vue 3 UI component library
+- **Three.js** - 3D graphics library
+- **Turf.js** - Spatial analysis library
+- **Axios** - HTTP client
+
+### Backend
+- **Node.js** - JavaScript runtime
+- **Express** - Web application framework
+- **PostgreSQL** - Relational database
+- **JWT** - Authentication
+- **Multer** - File upload handling
+- **bcryptjs** - Password encryption
+
+## 📦 Project Structure
 
 ```
 Urbanexus/
-├── src/                    # 前端源代码
-│   ├── components/         # Vue 组件
-│   │   ├── AnalysisModals.vue      # 分析模态框
-│   │   ├── BuildingPlanningEnhanced.vue  # 建筑规划
-│   │   ├── CharacterExplorer.vue   # 人物漫游
-│   │   ├── DataLoader.vue          # 数据加载器
-│   │   ├── GeometryTools.vue       # 几何工具
-│   │   ├── LayerManager.vue        # 图层管理
-│   │   ├── Navbar.vue              # 导航栏
-│   │   └── ...                     # 其他组件
-│   ├── services/          # API 服务
-│   ├── config.js          # 配置文件
-│   └── App.vue            # 主应用组件
-├── backend/               # 后端服务
-│   ├── controllers/       # 控制器
-│   ├── models/           # 数据模型
-│   ├── routes/           # 路由定义
-│   ├── middleware/       # 中间件
-│   ├── config/           # 配置文件
-│   └── server.js         # 服务器入口
-├── public/               # 静态资源
-│   ├── skybox/          # 天空盒资源
-│   └── assets/          # 其他资源
-└── dist/                # 构建输出
+├── src/                    # Frontend source code
+│   ├── components/         # Vue components
+│   │   ├── AnalysisModals.vue      # Analysis modals
+│   │   ├── BuildingPlanningEnhanced.vue  # Building planning
+│   │   ├── CharacterExplorer.vue   # Character roaming
+│   │   ├── DataLoader.vue          # Data loader
+│   │   ├── GeometryTools.vue       # Geometry tools
+│   │   ├── LayerManager.vue        # Layer management
+│   │   ├── Navbar.vue              # Navigation bar
+│   │   └── ...                     # Other components
+│   ├── services/          # API services
+│   ├── config.js          # Configuration file
+│   └── App.vue            # Main application component
+├── backend/               # Backend service
+│   ├── controllers/       # Controllers
+│   ├── models/           # Data models
+│   ├── routes/           # Route definitions
+│   ├── middleware/       # Middleware
+│   ├── config/           # Configuration files
+│   └── server.js         # Server entry point
+├── public/               # Static resources
+│   ├── skybox/          # Skybox resources
+│   └── assets/          # Other resources
+└── dist/                # Build output
 
 ```
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 环境要求
+### Requirements
 - Node.js >= 16.0.0
 - PostgreSQL >= 12.0
-- npm 或 pnpm
+- npm or pnpm
 
-### 安装步骤
+### Installation Steps
 
-1. **克隆项目**
+1. **Clone the repository**
 ```bash
 git clone <repository-url>
 cd Urbanexus
 ```
 
-2. **安装前端依赖**
+2. **Install frontend dependencies**
 ```bash
 npm install
-# 或
+# or
 pnpm install
 ```
 
-3. **安装后端依赖**
+3. **Install backend dependencies**
 ```bash
 cd backend
 npm install
 ```
 
-4. **配置数据库**
-   - 创建 PostgreSQL 数据库
-   - 在 `backend` 目录下创建 `.env` 文件：
+4. **Configure database**
+   - Create a PostgreSQL database
+   - Create a `.env` file in the `backend` directory:
 ```env
 PORT=3000
 DB_HOST=localhost
@@ -140,52 +186,52 @@ DB_PASSWORD=your_password
 JWT_SECRET=your_jwt_secret
 ```
 
-5. **初始化数据库**
+5. **Initialize database**
 ```bash
 cd backend
 npm run init-db
 ```
 
-6. **启动后端服务**
+6. **Start backend service**
 ```bash
 cd backend
 npm start
-# 或开发模式
+# or development mode
 npm run dev
 ```
 
-7. **启动前端开发服务器**
+7. **Start frontend development server**
 ```bash
-# 在项目根目录
+# In project root directory
 npm run dev
 ```
 
-8. **访问应用**
-   - 前端：http://localhost:5173
-   - 后端 API：http://localhost:3000
+8. **Access the application**
+   - Frontend: http://localhost:5173
+   - Backend API: http://localhost:3000
 
-## 📝 构建部署
+## 📝 Build & Deployment
 
-### 在线演示
-项目已部署并可在以下地址访问：
-- **生产环境**：[http://114.215.206.64/](http://114.215.206.64/)
+### Online Demo
+The project has been deployed and can be accessed at:
+- **Production Environment**: [http://114.215.206.64/](http://114.215.206.64/)
 
-### 构建前端
+### Build Frontend
 ```bash
 npm run build
 ```
 
-构建产物将输出到 `dist` 目录。
+The build output will be generated in the `dist` directory.
 
-### 预览构建结果
+### Preview Build Results
 ```bash
 npm run preview
 ```
 
-## 🔧 配置说明
+## 🔧 Configuration
 
-### 前端配置
-编辑 `src/config.js` 修改后端 API 地址和其他配置：
+### Frontend Configuration
+Edit `src/config.js` to modify backend API address and other configurations:
 
 ```javascript
 export const backendConfig = {
@@ -195,30 +241,30 @@ export const backendConfig = {
 };
 ```
 
-### 后端配置
-在 `backend/.env` 文件中配置数据库连接和其他环境变量。
+### Backend Configuration
+Configure database connection and other environment variables in the `backend/.env` file.
 
-## 📚 主要功能使用
+## 📚 Main Feature Usage
 
-### 数据加载
-1. 点击导航栏的"数据加载"按钮
-2. 选择要加载的数据类型（GLB、3DTiles、Shapefile 等）
-3. 上传文件或输入 URL
-4. 数据将自动加载到场景中
+### Data Loading
+1. Click the "Data Loader" button in the navigation bar
+2. Select the data type to load (GLB, 3DTiles, Shapefile, etc.)
+3. Upload a file or enter a URL
+4. Data will be automatically loaded into the scene
 
-### 场景分析
-1. 打开左侧工具栏
-2. 选择相应的分析工具
-3. 按照提示在场景中进行交互操作
-4. 查看分析结果
+### Scene Analysis
+1. Open the left toolbar
+2. Select the corresponding analysis tool
+3. Follow the prompts to interact in the scene
+4. View analysis results
 
-### 图层管理
-1. 点击"图层管理"按钮
-2. 查看当前所有图层
-3. 可以控制图层的显示/隐藏、透明度等
-4. 支持图层的删除和导出
+### Layer Management
+1. Click the "Layer Management" button
+2. View all current layers
+3. Control layer visibility, opacity, etc.
+4. Support layer deletion and export
 
-### 用户系统
-- **注册**：点击导航栏的"注册"按钮创建新账户
-- **登录**：使用注册的账户登录
-- **权限**：部分高级功能需要登录后使用
+### User System
+- **Registration**: Click the "Register" button in the navigation bar to create a new account
+- **Login**: Log in with your registered account
+- **Permissions**: Some advanced features require login to use
